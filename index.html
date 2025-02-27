@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MisaxFN Discord | Fun & Chill</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset stylů */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Tělo stránky */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #181818; /* tmavé pozadí */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        /* Animace pro pozadí */
+        @keyframes backgroundMove {
+            0% { background-position: 100% 0; }
+            50% { background-position: 0 100%; }
+            100% { background-position: 100% 0; }
+        }
+
+        /* Styl containeru */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            width: 100%;
+            animation: fadeIn 1s ease-out forwards;
+            margin-top: 30px;
+        }
+
+        /* Efekt zobrazení */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Sekce, které budou mít moderní vzhled */
+        .section {
+            background: rgba(255, 152, 0, 0.85);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            color: white;
+            text-align: center;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            letter-spacing: 1px;
+        }
+
+        /* Tlačítko pro Discord */
+        .button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 30px;
+            margin-top: 50px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #e68900;
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Sociální ikony */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            font-size: 32px;
+            color: #fff;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ff9800;
+            transform: scale(1.2);
+        }
+
+        /* Responsivita pro mobilní zařízení */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .section h2 {
+                font-size: 24px;
+            }
+
+            .button {
+                font-size: 18px;
+                padding: 15px 35px;
+            }
+
+            .social-icons {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Vítej na Discordu Misaxe! 🎉</h1>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>🔥 O serveru</h2>
+            <p>Zábavný a chill server, kde se můžeš bavit s komunitou, sdílet memes, hrát hry a užívat si pohodu!</p>
+        </div>
+
+        <div class="section">
+            <h2>🎮 Herní sekce</h2>
+            <p>Fortnite, GTA, Minecraft a další hry – připoj se k nám a hraj s komunitou!</p>
+        </div>
+
+        <div class="section">
+            <h2>🎁 Giveaways & Minihry</h2>
+            <p>Pravidelné soutěže, custom hry a speciální eventy. Nenech si to ujít!</p>
+        </div>
+
+        <div class="section">
+            <h2>😂 Memes & Fanart</h2>
+            <p>Nejlepší memes a fanarty od komunity. Pobav se a přispěj i ty!</p>
+        </div>
+    </div>
+
+    <a href="https://discord.gg/y2q8NrJD8w" class="button">Připojit se na Discord</a>
+
+    <!-- Sociální ikony -->
+    <div class="social-icons">
+        <a href="https://www.tiktok.com/@misaxfn" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/misaxfn" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/c/MisaxFN" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MisaxFN | <a href="https://discord.gg/y2q8NrJD8w" target="_blank">Připoj se k nám</a></p>
+    </footer>
+
+    <!-- FontAwesome pro ikony -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
